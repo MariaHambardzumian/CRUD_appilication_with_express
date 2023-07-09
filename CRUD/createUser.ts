@@ -28,7 +28,7 @@ export default function createUpdateUser(obj: any, id: number | null = null): vo
     ///updating
     else if (id != null && finded != -1) {
         let existingIds = data.map(user=>user.id)
-        if(existingIds.includes(obj.id)){
+        if(id != obj.id && existingIds.includes(obj.id)){
             throw `Updating the user with ID ${id} to ${obj.id} is not possible due to an existing user with the same ID. Please choose a different ID for the update and try again.`
         }
         data[finded] = { ...data[finded], ...obj, modification_timestamp: Date.now() }

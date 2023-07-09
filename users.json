@@ -16,5 +16,14 @@
         "status": true,
         "creation_timestamp": 1688923501032,
         "modification_timestamp": 1688924732373
+    },
+    {
+        "id": 3,
+        "name": "John",
+        "age": 26,
+        "gender": "male",
+        "status": false,
+        "creation_timestamp": 1688928058185,
+        "modification_timestamp": 1688928175005
     }
 ]

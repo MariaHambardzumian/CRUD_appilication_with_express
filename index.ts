@@ -18,7 +18,7 @@ const authorizeWithKey = (req: Request, res: Response, next: NextFunction) => {
     next();
 };
 
-app.use('/create', authorizeWithKey, (req: Request, res: Response, next: NextFunction) => {
+app.post('/create', authorizeWithKey, (req: Request, res: Response, next: NextFunction) => {
     try {
         createUpdateUser(req.body)
         res.status(200).send('The user has been successfully created.')
@@ -27,7 +27,7 @@ app.use('/create', authorizeWithKey, (req: Request, res: Response, next: NextFun
     }
 })
 
-app.use('/update/:id', authorizeWithKey, (req: Request, res: Response, next: NextFunction) => {
+app.post('/update/:id', authorizeWithKey, (req: Request, res: Response, next: NextFunction) => {
     const { id } = req.params
     try {
         createUpdateUser(req.body, +id)
@@ -36,7 +36,7 @@ app.use('/update/:id', authorizeWithKey, (req: Request, res: Response, next: Nex
         next(error)
     }
 })
-app.use('/activate/:id', authorizeWithKey, (req: Request, res: Response, next: NextFunction) => {
+app.post('/activate/:id', authorizeWithKey, (req: Request, res: Response, next: NextFunction) => {
     const { id } = req.params
     try {
         activateUser( +id)
