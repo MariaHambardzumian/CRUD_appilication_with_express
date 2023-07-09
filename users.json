@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Armen",
+        "gender": "male",
+        "age": 16,
+        "status": false,
+        "creation_timestamp": 1688823501174,
+        "modification_timestamp": null
+    },
+    {
+        "id": 2,
+        "name": "Maria",
+        "gender": "female",
+        "age": 21,
+        "status": true,
+        "creation_timestamp": 1688923501032,
+        "modification_timestamp": 1688924732373
+    }
+]
