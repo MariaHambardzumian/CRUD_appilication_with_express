@@ -53,7 +53,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon index.ts"
+    "start": "npx nodemon src/index.ts"
   },
   "keywords": [],
   "author": "",
